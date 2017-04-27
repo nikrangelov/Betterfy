@@ -1,0 +1,2 @@
+# betterfy
+Habit tracker
