@@ -1,6 +1,7 @@
 package betterfy.controllers;
 
 
+import betterfy.entities.Greeting;
 import betterfy.entities.Role;
 import betterfy.entities.User;
 import betterfy.repositories.RoleRepository;
@@ -12,6 +13,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -47,6 +49,12 @@ public class TestController {
         user.setPassword("qaz20");
         userService.saveUser(user);
         return "User created!";
+    }
+
+    @RequestMapping(value = "private/greeting", method=RequestMethod.GET)
+    public @ResponseBody Greeting sayHello(){
+        return new Greeting(1, "Hello stranger");
+
     }
 
 }
