@@ -31,7 +31,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                     .antMatchers("/private/**").hasRole("USER")
                 .and()
-                    .formLogin()
+                    .formLogin() .defaultSuccessUrl("/home.html")
         .and()
                 .httpBasic()
                 .and()

@@ -20,6 +20,8 @@
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-security:1.5.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.5.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.13" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.5.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-validator:5.3.4.Final" />
@@ -36,6 +38,8 @@
           <element id="library" level="project" name="Gradle: javax.transaction:javax.transaction-api:1.2" />
           <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-jpa:1.11.1.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aspects:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:1.5.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.5.2.RELEASE" />
@@ -67,12 +71,15 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.7.RELEASE" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.24" />
           <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.24" />
+          <element id="library" level="project" name="Gradle: org.thymeleaf:thymeleaf:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.codehaus.groovy:groovy:2.4.9" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.1.11" />
           <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:1.7.24" />
           <element id="library" level="project" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.24" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.11" />
+          <element id="library" level="project" name="Gradle: ognl:ognl:3.0.8" />
+          <element id="library" level="project" name="Gradle: org.unbescape:unbescape:1.1.0.RELEASE" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.11" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.13/631249c6055be15a1fab26b3c28a3e5c6f3d97e0/mysql-connector-java-5.1.13.jar" />
         </element>
       </element>
     </root>
