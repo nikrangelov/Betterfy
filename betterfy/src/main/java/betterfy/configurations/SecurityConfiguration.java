@@ -31,7 +31,25 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                     .antMatchers("/private/**").hasRole("USER")
                 .and()
-                    .formLogin();
+                    .formLogin()
+        .and()
+                .httpBasic()
+                .and()
+                .csrf().disable()
+                .logout()
+                .logoutSuccessUrl("/");
+                //.loginPage("/login.html")
+                //.loginProcessingUrl("/perform_login")
+                //.defaultSuccessUrl("/index.html",true)
+                //.failureUrl("/login.html?error=true");
+
+        /*
+         http.formLogin()
+      .loginPage("/login.html")
+      .loginProcessingUrl("/perform_login")
+      .defaultSuccessUrl("/homepage.html",true)
+      .failureUrl("/login.html?error=true")
+         */
     }
 
     @Autowired
