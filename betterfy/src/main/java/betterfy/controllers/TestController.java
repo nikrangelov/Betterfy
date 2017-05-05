@@ -9,6 +9,8 @@ import betterfy.services.UserService;
 import betterfy.services.UserServiceImpl;
 import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,9 +42,9 @@ public class TestController {
 
     @RequestMapping(value = "public/createUser",  method = RequestMethod.GET)
     public String createUser(){
-      // Role role = new Role();
-      // role.setRole("ROLE_USER");
-       //roleRepository.save(role);
+        //Role role = new Role();
+        //role.setRole("ROLE_USER");
+        //roleRepository.save(role);
 
         User user = new User();
         user.setEmail("nik@nik.com");
@@ -56,5 +58,12 @@ public class TestController {
         return new Greeting(1, "Hello stranger");
 
     }
+
+    @RequestMapping(value = "public/getUser",  method = RequestMethod.GET)
+    public ResponseEntity<User> getUser(){
+        User user = userService.findUserByEmail("nik@nik.com");
+        return new ResponseEntity<User>(user, HttpStatus.OK);
+    }
+
 
 }
